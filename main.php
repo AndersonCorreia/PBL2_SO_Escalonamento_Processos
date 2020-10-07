@@ -1,6 +1,8 @@
 <?php 
 require "Escalonador.php";
 
-(new Escalonador())->run(5);
+$escalonador = new Escalonador();
+$escalonador->addProcessos(5);
+$escalonador->addProcessos(5);
 
 print("\n\n END.");
